@@ -1,0 +1,40 @@
+{
+    "name": "Ejjaz",
+    "version": "0.1",
+    "description": "Ejjaz is easy tool to summerize your Contnets",
+    "permissions": [
+      "activeTab",
+      "<all_urls>",
+      "storage",
+      "tabs",
+      "cookies",
+      "notifications",
+      "fontSettings",
+      "*://*.myserver.com/*"
+    ],
+    "content_scripts": [
+      {
+      "matches": ["http://www.google.com/*"],
+      "js": ["content_script.js","login.js" , "symm.js" , "signup.js"],
+      "all_frames": true
+      }
+    ],
+    "background": {
+      "scripts": ["popup.js"],
+      "persistent": false
+    },
+    "icons": {
+      "128": "Ejjaz-m.png"
+    },
+    "browser_action": {
+        "default_title": "My ext",
+        "default_icon": "icon.png",
+        "default_popup": "login.html"
+    },
+    "web_accessible_resources": [
+      "http://somewhere.com/jquery.min.js",
+      "sweetalert/sweetalert.*"
+       ],
+    "manifest_version": 2,
+    "content_security_policy": "script-src 'self' http://ejjaz/  https://cdn.jsdelivr.net https://ejjaz.bishtawi.me/ object-src 'self'"
+  }

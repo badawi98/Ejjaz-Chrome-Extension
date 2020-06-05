@@ -1,0 +1,191 @@
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="signup.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" 
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+    <script src="sweetalert2.all.min.js"></script>
+<!-- Optional: include a polyfill for ES6 Promises for IE11 -->
+<script src="https://cdn.jsdelivr.net/npm/promise-polyfill"></script>
+</head>
+<style>
+    .swal2-success-ring  {
+  border-color: #ffc107 !important;
+}
+.swal2-title {
+    font-family: 'Cairo', sans-serif !important;
+}
+.swal2-confirm {
+    border:0px;
+    font-family: 'Cairo', sans-serif !important;
+    margin: 0px;
+}
+
+.swal2-confirm{
+    border-left-color: #fcd147 !important;
+    border-right-color: #fcd147 !important;
+} 
+.swal2-styled{
+    border-left-color: #fcd147 !important;
+    border-right-color: #fcd147 !important;
+} 
+.swal2-styled{
+    border:0px;
+    font-family: 'Cairo', sans-serif !important;
+    margin: 0px;
+}
+      body{
+            margin-bottom: 0px;
+        }
+		table{
+    width:100%;
+   height: 100% }
+
+   #table2{
+       margin-top: 1%;
+   }
+   #subBorder1{
+       border-style: groove;
+       width:100%;
+       height: 100%;
+
+   }
+   #border1{
+
+       
+       width: 494px;
+       height: 50px;
+       padding-bottom: 2%;
+   }
+   #border{
+
+       
+       width: 500px;
+       height: 470px;
+   }
+   #border2{
+       border-style: groove;
+       width: 230px;
+       height: 330px;
+       border-color: #f2f2f2;
+       border-radius: 10px; 
+ }
+ #border3{
+       
+       width: 230px;
+       height: 330px;
+ }
+ #border5{
+     
+       width: 490px;
+       height: 50px;
+       color: gray;
+        border-color: white;
+ }
+
+     #statistics{
+         border-radius: 10px; 
+       border-style: groove;
+       width: 225px;
+       height: 150px;
+       border-color: #f2f2f2;
+
+ }
+ #divbutton{
+     
+       width: 225px;
+       height: 100px;
+       padding-bottom: 1%;
+       padding-top: 2%;
+ }
+ #active { 
+     color: #fcd147;
+     border-bottom: 2px solid #fcd147  ;
+ }
+ #disactive { 
+     background-color: #fcfbfc;
+     color: black;
+ }
+ #disactive:hover { 
+     color: #fcd147;
+ }
+   h3{
+       color: #ffcc00;
+       padding-left: 3%;
+       font-size: 160%;
+   }
+   #h2{ 
+   color: #4dff4d;
+   font-size: 150%;
+   text-align: left; 
+   margin-left: 2%;}
+   #statis{
+       color: #4dff4d;
+   font-size: 200%;
+   text-align: center;
+   }
+
+   #p{
+       text-align: center;
+       font-size: 120%;
+
+   }
+   #subtitle{color: gray;}
+   #Ejjaz{
+       font-size: 160%;
+       text-align: left;
+   }
+
+   #symbutton{
+       padding-top: 2%;
+       padding-bottom: 2%;
+       margin-left: 10%;
+       width: 70%;
+       height: 37%;
+       border-radius: 20px; 
+ background: #ffcc00;
+border: none;
+ font-size: 15px;
+ color: black;
+ cursor: pointer;
+}
+</style>
+<body class="body-popup" style="min-width: 350px; height: auto; background-color: #fbfcfb;">
+    <div class="container-fluid overflow-auto">
+        <div class="row">
+            <div class="col">
+                <h2 style="color: #ffc107;" align="center"> Ejjaz</h2>
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Name</label>
+                    <input type="text" class="form-control" id="name" aria-describedby="emailHelp" placeholder="Enter Your Name">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputPassword1">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter Your Email">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputPassword1">Password</label>
+                    <input type="password" class="form-control" id="pass" placeholder="Enter Your Password">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputPassword1">Confirm Password</label>
+                    <input type="password" class="form-control" id="Cpass" placeholder="Confirm Your Password">
+                  </div>
+                  <div class="form-group form-check d-flex justify-content-between">
+                      <span>
+                          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                          <label class="form-check-label" for="exampleCheck1">I accept the terms & conditions.</label>
+                      </span>
+                      
+                  </div>
+                  <a id="signup" type="button" class="btn btn-warning btn-lg btn-block">Register</a><br>
+                  <p>___________Do you have an account?__________</p>
+                  <button  id="login" type="button" class="clickme btn btn-outline-danger btn-lg btn-block">
+                    login</button>
+                </div>
+        </div>
+    </div>
+</body>
+</html>
